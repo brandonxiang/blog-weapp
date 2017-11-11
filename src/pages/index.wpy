@@ -21,7 +21,7 @@
 
     data = {
        list: [
-         {id: 'c9e7e36c9d0e', title: 'AlloyTeam前端大会的技术一览', desc:'AlloyTeam Conf是一个干货非常集中的前端大会。'},
+         {id: 'https://raw.githubusercontent.com/PaicFE/blog/master/blog/AC.md', title: 'AlloyTeam前端大会的技术一览', desc:'AlloyTeam Conf是一个干货非常集中的前端大会。'},
          {id: '28596894c331', title: '入门BEM', desc:'你的样式类名是怎么命名的？'}
       ]
     }

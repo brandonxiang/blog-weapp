@@ -1,4 +1,9 @@
 
   <view class="container">
-    {{id}}
+      
+  <import src="../plugins/wxParse/wxParse.wxml"/>
+  <block  wx:for="{{$htmlParser$htmlParserTpl.nodes}}" wx:key="{{index}}">
+    <template is="wxParse0" data="{{item}}"/>
+  </block>
+
   </view>

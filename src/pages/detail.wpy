@@ -1,23 +1,40 @@
 <template>
   <view class="container">
-    {{id}}
+      <htmlParser :parserName="name" :parserContent.sync="content" parserType='md'/>
   </view>
 </template>
 
 <script>
 import wepy from "wepy";
+import htmlParser from "../components/htmlParser";
 
 export default class Index extends wepy.page {
   config = {
     navigationBarTitleText: "博客正文"
   };
 
+  components = {
+    htmlParser
+  };
+
+  data = {
+    name: "1",
+    content: '加载中...',
+  };
+
   onLoad = options => {
-    this.setData({
-      id: options.id
+    wx.request({
+      url: options.id,
+      success: e => {
+        this.content =  e.data; 
+        this.$apply();
+        this.$invoke('htmlParser', 'htmlParserNotice')
+      }
     });
   };
 
-  
+  watch = {
+
+  }
 }
 </script>
