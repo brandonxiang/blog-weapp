@@ -1,0 +1,23 @@
+<template>
+  <view class="container">
+    {{id}}
+  </view>
+</template>
+
+<script>
+import wepy from "wepy";
+
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitleText: "博客正文"
+  };
+
+  onLoad = options => {
+    this.setData({
+      id: options.id
+    });
+  };
+
+  
+}
+</script>

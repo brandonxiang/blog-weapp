@@ -1,0 +1,1 @@
+.card{padding:40rpx;border:5rpx;width:100%;margin:10rpx;background-color:#eeeeee;display:flex}.card-img{width:100rpx;height:100rpx;border-radius:50%;margin:0 40rpx}.card-title{font-weight:bolder;width:550rpx;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.card-desc{color:#aaa;width:550rpx;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
