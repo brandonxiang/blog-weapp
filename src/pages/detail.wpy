@@ -1,5 +1,11 @@
+<style lang="less">
+.detail {
+  padding: 30rpx 50rpx;
+}
+</style>
+
 <template>
-  <view class="container">
+  <view class="detail">
       <htmlParser :parserName="name" :parserContent.sync="content" parserType='md'/>
   </view>
 </template>
@@ -18,7 +24,7 @@ export default class Index extends wepy.page {
   };
 
   data = {
-    name: "1",
+    name: "temp",
     content: '加载中...',
   };
 

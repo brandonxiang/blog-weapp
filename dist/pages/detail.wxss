@@ -1,1 +1,2 @@
 @import "./../components/htmlParser.wxss";
+.detail{padding:30rpx 50rpx}

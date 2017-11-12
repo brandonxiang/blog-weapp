@@ -7,24 +7,41 @@
 </template>
 
 <script>
-  import wepy from 'wepy'
-  import Card from '../components/Card'
+import wepy from "wepy";
+import Card from "../components/Card";
 
-  export default class Index extends wepy.page {
-    config = {
-      navigationBarTitleText: '我的博客'
-    }
-  
-    components = {
-      card: Card
-    }
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitleText: "我的博客"
+  };
 
-    data = {
-       list: [
-         {id: 'https://raw.githubusercontent.com/PaicFE/blog/master/blog/AC.md', title: 'AlloyTeam前端大会的技术一览', desc:'AlloyTeam Conf是一个干货非常集中的前端大会。'},
-         {id: '28596894c331', title: '入门BEM', desc:'你的样式类名是怎么命名的？'}
-      ]
-    }
-  }
+  components = {
+    card: Card
+  };
 
+  data = {
+    list: [
+      {
+        id: "https://raw.githubusercontent.com/PaicFE/blog/master/blog/AC.md",
+        title: "AlloyTeam前端大会的技术一览",
+        desc: "AlloyTeam Conf是一个干货非常集中的前端大会"
+      },
+      {
+        id: "https://raw.githubusercontent.com/PaicFE/blog/master/blog/bem.md",
+        title: "入门BEM",
+        desc: "你的样式类名是怎么命名的？"
+      },
+      {
+        id:"https://raw.githubusercontent.com/PaicFE/blog/master/blog/iframe-height.md",
+        title: "如何动态获取跨域iframe高度",
+        desc: "iframe你懂多少？"
+      },
+      {
+        id:"https://raw.githubusercontent.com/PaicFE/blog/master/blog/CI.md",
+        title: "持续集成",
+        desc: "不，是你的前端代码部署"
+      }
+    ]
+  };
+}
 </script>
