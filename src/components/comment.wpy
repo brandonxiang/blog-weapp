@@ -1,0 +1,39 @@
+<style lang="less">
+.comment {
+  position:fixed;
+  bottom:0;
+  height:80rpx;
+  background-color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  &-text {
+    background: #eee;
+    border-radius: 20rpx;
+    flex:1;
+    padding:10rpx 30rpx;
+    margin: 5rpx 30rpx;
+  }
+  &-btn {
+    margin: 5rpx 30rpx;
+    padding: 10rpx;
+  }
+
+}
+</style>
+
+
+<template>
+  <div class="comment">
+    <input class="comment-text" type="text" placeholder="我也来说两句"></input>
+    <text class="comment-btn">发送</text>
+  </div>
+</template>
+
+<script>
+  import wepy from "wepy";
+
+  export default class comment extends wepy.component {
+
+    }
+</script>

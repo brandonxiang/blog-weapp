@@ -1,11 +1,12 @@
 <style lang="less">
 .card {
-  padding: 40rpx;
-  border: 5rpx;
-  width: 100%;
-  margin: 10rpx;
-  background-color: #eeeeee;
-  display: flex;
+  padding:40rpx;
+  border:1rpx solid #eee;
+  width:100%;
+  margin:0;
+  background-color:#fff;
+  display:flex;
+
   &-img {
     width: 100rpx;
     height: 100rpx;

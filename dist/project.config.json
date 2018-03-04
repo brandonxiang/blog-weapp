@@ -8,7 +8,7 @@
 		"newFeature": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.4",
+	"libVersion": "1.9.90",
 	"appid": "wxf6450690408bb555",
 	"projectname": "wxblog",
 	"condition": {
@@ -20,9 +20,20 @@
 			"current": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"game": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "详情页面",
+					"pathName": "pages/detail",
+					"query": "id=https://raw.githubusercontent.com/PaicFE/blog/master/blog/AC.md"
+				}
+			]
 		}
 	}
 }

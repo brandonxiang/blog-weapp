@@ -7,3 +7,8 @@
   </block>
 
   </view>
+  
+  <div class="comment">
+    <input class="comment-text" type="text" placeholder="我也来说两句"/>
+    <text class="comment-btn">发送</text>
+  </div>

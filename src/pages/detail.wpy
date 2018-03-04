@@ -1,6 +1,6 @@
 <style lang="less">
 .detail {
-  padding: 30rpx 50rpx;
+  padding: 50rpx 30rpx 100rpx 30rpx;
 }
 </style>
 
@@ -8,11 +8,13 @@
   <view class="detail">
       <htmlParser :parserName="name" :parserContent.sync="content" parserType='md'/>
   </view>
+  <comment/>
 </template>
 
 <script>
 import wepy from "wepy";
 import htmlParser from "../components/htmlParser";
+import comment from '../components/comment';
 
 export default class Index extends wepy.page {
   config = {
@@ -20,7 +22,8 @@ export default class Index extends wepy.page {
   };
 
   components = {
-    htmlParser
+    htmlParser,
+    comment: comment,
   };
 
   data = {
