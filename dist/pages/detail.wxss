@@ -1,3 +1,0 @@
-@import "./../components/comment.wxss";
-@import "./../components/htmlParser.wxss";
-.detail{padding:50rpx 30rpx 100rpx 30rpx}
